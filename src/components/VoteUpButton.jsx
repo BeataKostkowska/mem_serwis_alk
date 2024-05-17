@@ -1,8 +1,8 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-export function VoteUpButton ({upvotes}) {
+export function VoteUpButton (/*{upvotes}*/ {votesUp, setVotesUp}) {
 
-    const [votesUp, setVotesUp] = useState(upvotes);
+    
 
     const upVotesCounter = () => {
         setVotesUp(votesUp + 1);

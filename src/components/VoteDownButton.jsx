@@ -1,8 +1,8 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-export function VoteDownButton ({downvotes}) {
+export function VoteDownButton (/*{downvotes}*/ {votesDown, setVotesDown}) {
 
-    const [votesDown, setVotesDown] = useState(downvotes);
+    
 
     const downVotesCounter = () => {
         setVotesDown(votesDown - 1);
