@@ -1,4 +1,4 @@
-export const memesDatabase = [
+export let memesDatabase = [
     {
         id: 1,
         title: 'Mem 1',

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { VoteDownButton } from "./VoteDownButton";
 import { VoteUpButton } from "./VoteUpButton";
 
-export function VotingButtons ({upvotes, downvotes}) {
+export function VotingButtons ({upvotes, downvotes, mem}) {
 
     const [votesUp, setVotesUp] = useState(upvotes);
     const [votesDown, setVotesDown] = useState(downvotes);
@@ -11,8 +11,8 @@ export function VotingButtons ({upvotes, downvotes}) {
 
     return (
         <div>
-        <VoteUpButton votesUp={votesUp} setVotesUp={setVotesUp}/>
-        <VoteDownButton votesDown={votesDown} setVotesDown={setVotesDown}/>
+        <VoteUpButton votesUp={votesUp} setVotesUp={setVotesUp} votesSum={votesSum} mem={mem}/>
+        <VoteDownButton votesDown={votesDown} setVotesDown={setVotesDown} mem={mem}/>
         <p>Różnica głosów {votesSum}</p>
         </div>
     );
