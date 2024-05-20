@@ -1,15 +1,9 @@
+body {
+  background-color: #a8a299;
+  min-width: 850px;
+}
 .App {
   text-align: center;
-}
-
-.navButton {
-    display: inline;
-    border: 1px solid black;
-    list-style: none;
-    padding: 5px;
-    margin: 5px;
-}
-
-.active {
-  background-color: lightblue;
+  box-sizing: border-box;
+  
 }

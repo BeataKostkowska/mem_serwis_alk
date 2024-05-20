@@ -1,0 +1,50 @@
+.navbar {
+    background-color: #325a6e;
+    display: flex;
+    align-items: center;
+}
+
+.title {    
+    padding: 8px 24px;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #ffae42;
+    font-size: 48px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.buttonsList{
+    display: inline-flex;
+    width: 50vw;
+    padding: 8px 24px;
+    justify-content: space-around;
+    margin-left: auto;
+}
+
+.navButton {
+    display: flex;
+    border: 1px solid black;
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+    border: #ffae42 solid 2px;
+    margin: 0 10px;
+    padding: 8px;
+    width: 100px;
+    justify-content: center;
+}
+
+.navButton a {
+    color: #ffae42;
+    text-decoration: none;
+}
+
+.navButton li a:hover {
+    background-color: #ffae42;
+    color: #325a6e;
+}
+
+.active a{
+    background-color: lightblue;
+}

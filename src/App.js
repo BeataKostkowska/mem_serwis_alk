@@ -16,16 +16,15 @@ function App() {
   return (
     <div className="App">
     <BrowserRouter>
-
       <NavigationBar />
-
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='regular' element={<RegularPage memesList={memesList} setMemesList={setMemesList} />} />
-        <Route path='/hot' element={<HotPage memesList={memesList} setMemesList={setMemesList} />} />   
-        <Route path='*' element={<ErrorPage />} />   
-      </Routes>
-      
+      <main>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='regular' element={<RegularPage memesList={memesList} setMemesList={setMemesList} />} />
+          <Route path='/hot' element={<HotPage memesList={memesList} setMemesList={setMemesList} />} />   
+          <Route path='*' element={<ErrorPage />} />   
+        </Routes>
+      </main> 
     </BrowserRouter>
     </div>
   );
