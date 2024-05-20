@@ -16,6 +16,9 @@ export function NavigationBar () {
                 <li className={styles.navButton}>
                     <NavLink to='/hot'>Hot</NavLink>
                 </li>
+                <li className={styles.navButton}>
+                    <NavLink to='/favourites'>Favourites</NavLink>
+                </li>
             </ul>
         </div>
     );
