@@ -1,3 +1,5 @@
+import Button from 'react-bootstrap/Button';
+
 export function VotingButtons ({upvotes, downvotes, mem, setMemesList, memesList}) {
 
     const upVotesCounter = (mem) => {
@@ -16,8 +18,10 @@ export function VotingButtons ({upvotes, downvotes, mem, setMemesList, memesList
 
     return (
         <div>
-            <button onClick={() => upVotesCounter(mem)}>{upvotes}</button>
-            <button onClick={() => downVotesCounter(mem)}>{downvotes}</button>
+            <Button onClick={() => upVotesCounter(mem)} variant="outline-success">Upvotes: {upvotes}</Button>
+            <Button onClick={() => downVotesCounter(mem)} variant="outline-danger">Downvotes: {downvotes}</Button>
+            {/* <button onClick={() => upVotesCounter(mem)} type="button" className="btn btn-outline-success" >{upvotes}</button> */}
+            {/* <button onClick={() => downVotesCounter(mem)} type="button" className="btn btn-outline-danger" >{downvotes}</button> */}
             <p>Różnica głosów {upvotes+downvotes}</p>
         </div>
     );
