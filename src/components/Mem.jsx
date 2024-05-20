@@ -6,7 +6,7 @@ export function Mem ( {mem, setMemesList, memesList}) {
             <p>{mem.title}</p>
             <img src={mem.img} alt={mem.title}></img>
             <br />
-            <VotingButtons upvotes={mem.upvotes} downvotes={mem.downvotes} key={mem.id} mem={mem} setMemesList={setMemesList} memesList={memesList}/>
+            <VotingButtons upvotes={mem.upvotes} downvotes={mem.downvotes} key={mem.id} mem={mem} setMemesList={setMemesList} memesList={memesList} />
             <hr />
         </div>
     )       

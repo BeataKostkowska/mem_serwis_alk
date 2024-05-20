@@ -11,8 +11,7 @@ import { memesDatabase } from './components/memesDatabase';
 
 function App() {
 
-  // const [memesList, setMemesList] = useState({regular: memesDatabase, hot: []});
-  const [memesList, setMemesList] = useState(memesDatabase);
+    const [memesList, setMemesList] = useState(memesDatabase);
 
   return (
     <div className="App">
@@ -22,8 +21,8 @@ function App() {
 
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='regular' element={<RegularPage memesList={memesList/*.regular*/} setMemesList={setMemesList} />} />
-        <Route path='/hot' element={<HotPage memesList={memesList/*.hot*/} setMemesList={setMemesList} />} />   
+        <Route path='regular' element={<RegularPage memesList={memesList} setMemesList={setMemesList} />} />
+        <Route path='/hot' element={<HotPage memesList={memesList} setMemesList={setMemesList} />} />   
         <Route path='*' element={<ErrorPage />} />   
       </Routes>
       
