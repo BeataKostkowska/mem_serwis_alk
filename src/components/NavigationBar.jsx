@@ -8,19 +8,29 @@ export function NavigationBar () {
 
             <ul className={styles.buttonsList}>
                 <li className={styles.navButton}>
-                    <NavLink to='/'>Home</NavLink>
+                    <NavLink to='/' 
+                    className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
+                    >Home</NavLink>
                 </li>
                 <li className={styles.navButton}>
-                    <NavLink to='/regular'>Regular</NavLink>
+                    <NavLink to='/regular' 
+                    className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
+                    >Regular</NavLink>
                 </li>
                 <li className={styles.navButton}>
-                    <NavLink to='/hot'>Hot</NavLink>
+                    <NavLink to='/hot' 
+                    className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
+                    >Hot</NavLink>
                 </li>
                 <li className={styles.navButton}>
-                    <NavLink to='/favourites'>Favourites</NavLink>
+                    <NavLink to='/favourites' 
+                    className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
+                    >Favourites</NavLink>
                 </li>
                 <li className={styles.navButton}>
-                    <NavLink to='/addnew'>Add Mem</NavLink>
+                    <NavLink to='/addnew' 
+                    className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
+                    >Add Mem</NavLink>
                 </li>
             </ul>
         </div>

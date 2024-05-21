@@ -1,9 +1,48 @@
 body {
-  background-color: #a8a299;
-  min-width: 850px;
+  background-color: #b5b5b5;
+  min-width: 1000px;
 }
 .App {
   text-align: center;
   box-sizing: border-box;
   
 }
+main {
+  margin-top: 100px;
+}
+
+.upButton {  
+  background-color: #b5b5b5;
+  color: green;
+  border: green solid 2px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: large;
+  width: 160px;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.upButton:hover {
+  background-color: green;
+  color: rgb(246, 241, 241);
+}
+
+.downButton {
+  background-color: #b5b5b5;
+  color: red;
+  border: red solid 2px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: large;
+  width: 160px;
+  padding: 8px;
+  margin-left: 10px;
+}
+
+.downButton:hover {
+  background-color: red;
+  color: rgb(246, 241, 241);
+}
+
+

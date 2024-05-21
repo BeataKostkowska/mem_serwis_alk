@@ -1,0 +1,10 @@
+.memContainer {
+    border: #ffae42 solid 2px;
+    margin: 10px auto;
+    padding: 10px;
+    width: 600px;
+}
+
+.memImage {
+    width: 500px;
+  }

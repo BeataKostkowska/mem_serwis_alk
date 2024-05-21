@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+import styles from "../styles/NewMemForm.module.css";
 
 export function NewMemForm ({memesList, setMemesList}) {
 
@@ -44,14 +45,12 @@ export function NewMemForm ({memesList, setMemesList}) {
     };
 
     return (
-        <form>
-            <label>Mem Title: 
+        <form className={styles.formContainer}>
+            <label className={styles.label}>Mem Title: 
                 <input onChange={titleHandler} type="text" value={newMemTitle} name="title"/>
             </label>
             <label>Provide a link to the image: 
                 <input onChange={linkHandler} type="url" value={newMemLink} name="link"/>
-                {/* or upload Mem
-                <input type="file"/> */}
             </label>
             <button onClick={sendForm} type="submit">Create new Mem</button>
             <button onClick={resetForm}>Reset form</button>            
