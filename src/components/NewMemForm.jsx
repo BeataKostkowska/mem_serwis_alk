@@ -26,25 +26,30 @@ export function NewMemForm ({memesList, setMemesList}) {
             img: newMemLink
         };
 
-        console.log(newMem);
-        setMemesList([...memesList, newMem]);
-        setNewMemTitle("");
-        setNewMemLink("");
-    }
-
-    const resetForm = () => {
-        setNewMemTitle("");
-        setNewMemLink("");
+        if(window.confirm("Do you want to create new Mem with those data?")){
+            console.log(newMem);
+            setMemesList([...memesList, newMem]);
+            setNewMemTitle("");
+            setNewMemLink("");
+        }
     };
 
+    const resetForm = (e) => {
+        e.preventDefault();
+
+        if(window.confirm("Are you sure you want to reset form?")) {
+            setNewMemTitle("");
+            setNewMemLink("");
+        }
+    };
 
     return (
         <form>
-            <label>Mem Title
-                <input onChange={titleHandler} type="text" value={newMemTitle}/>
+            <label>Mem Title: 
+                <input onChange={titleHandler} type="text" value={newMemTitle} name="title"/>
             </label>
-            <label>Provide a link to the image
-                <input onChange={linkHandler} type="url" value={newMemLink}/>
+            <label>Provide a link to the image: 
+                <input onChange={linkHandler} type="url" value={newMemLink} name="link"/>
                 {/* or upload Mem
                 <input type="file"/> */}
             </label>
