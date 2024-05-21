@@ -19,6 +19,9 @@ export function NavigationBar () {
                 <li className={styles.navButton}>
                     <NavLink to='/favourites'>Favourites</NavLink>
                 </li>
+                <li className={styles.navButton}>
+                    <NavLink to='/addnew'>Add Mem</NavLink>
+                </li>
             </ul>
         </div>
     );

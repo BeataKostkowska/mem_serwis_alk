@@ -8,6 +8,7 @@ import { ErrorPage } from './pages/ErrorPage';
 import { useState } from 'react';
 import { memesDatabase } from './components/memesDatabase';
 import { FavouritePage } from './pages/FavouritesPage';
+import { AddNewPage } from './pages/AddNewPage';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path='regular' element={<RegularPage memesList={memesList} setMemesList={setMemesList} />} />
           <Route path='/hot' element={<HotPage memesList={memesList} setMemesList={setMemesList} />} />
           <Route path='/favourites' element={<FavouritePage memesList={memesList} setMemesList={setMemesList}/>} />
+          <Route path='/addnew' element={<AddNewPage memesList={memesList} setMemesList={setMemesList}/>} />
           <Route path='*' element={<ErrorPage />} />   
         </Routes>
       </main> 
