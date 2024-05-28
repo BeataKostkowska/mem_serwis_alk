@@ -24,10 +24,11 @@ export function NewMemForm ({memesList, setMemesList}) {
             title: newMemTitle,
             upvotes: 0,
             downvotes: 0,
-            img: newMemLink
+            img: newMemLink,
+            favourite: 0,
         };
 
-        if(window.confirm("Do you want to create new Mem with those data?")){
+        if(window.confirm("Do you want to create new Mem with this data?")){
             console.log(newMem);
             setMemesList([...memesList, newMem]);
             setNewMemTitle("");

@@ -5,6 +5,7 @@ export let memesDatabase = [
         upvotes: 8,
         downvotes: -1,
         img: 'Mem 1 image path',
+        favourite: 0,
     },
     {
         id: 2,
@@ -12,6 +13,7 @@ export let memesDatabase = [
         upvotes: 2,
         downvotes: -2,
         img: 'Mem 2 image path',
+        favourite: 0,
     },
     {
         id: 3,
@@ -19,6 +21,7 @@ export let memesDatabase = [
         upvotes: 11,
         downvotes: -3,
         img: 'Mem 3 image path',
+        favourite: 0,
     },
     {
         id: 4,
@@ -26,6 +29,7 @@ export let memesDatabase = [
         upvotes: 4,
         downvotes: 0,
         img: 'Mem 4 image path',
+        favourite: 0,
     },
     {
         id: 5,
@@ -33,5 +37,6 @@ export let memesDatabase = [
         upvotes: 3,
         downvotes: -5,
         img: 'Mem 5 image path',
+        favourite: 0,
     },
 ];

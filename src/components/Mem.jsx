@@ -6,7 +6,7 @@ export function Mem ( { mem, setMemesList, memesList }) {
     return (
         <div key={mem.id} className={styles.memContainer} >
             <p>{mem.title}</p>
-            <FaveButton key={mem.id} mem={mem} memesList={memesList} setMemesList={setMemesList} />
+            <FaveButton key={mem.id} mem={mem} memesList={memesList} setMemesList={setMemesList} favourite={mem.favourite}/>
             <br />
             <img src={mem.img} alt={mem.title} className={styles.memImage} />
             <br />

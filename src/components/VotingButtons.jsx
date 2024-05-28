@@ -22,7 +22,7 @@ export function VotingButtons ({upvotes, downvotes, mem, setMemesList, memesList
             <Button onClick={() => downVotesCounter(mem)} variant="outline-danger">Downvotes: {downvotes}</Button> */}
             <button onClick={() => upVotesCounter(mem)} className="upButton" >Upvotes: {upvotes}</button>
             <button onClick={() => downVotesCounter(mem)} className="downButton" >Downvotes: {downvotes}</button>
-            <p>Różnica głosów {upvotes+downvotes}</p>
+            {/* <p>Różnica głosów {upvotes+downvotes}</p> */}
         </div>
     );
 };

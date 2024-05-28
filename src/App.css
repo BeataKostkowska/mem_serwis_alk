@@ -45,4 +45,9 @@ main {
   color: rgb(246, 241, 241);
 }
 
+.faveButton{
+  border: #ffae42 solid 2px;
+  border-radius: 8px;
+  background-color: #b5b5b5;
+}
 
