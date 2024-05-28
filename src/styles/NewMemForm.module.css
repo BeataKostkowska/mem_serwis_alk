@@ -10,6 +10,7 @@
     display: block;
     margin: 10px 10px;
     text-align: left;
+    color: #0d2f40;
 }
 .labelForm:first-of-type{
     margin-top: 20px;
@@ -26,6 +27,7 @@
     border-radius: 4px;
     font-family: "Poppins", sans-serif;
     margin-top: 5px;
+    color: #0d2f40;
 }
 
 .inputForm:focus {
@@ -36,7 +38,7 @@
     font-family: "Poppins", sans-serif;
     border: #325a6e solid 2px;
     border-radius: 4px;
-    color: #325a6e;
+    color: #0d2f40;
     font-size: 14px;
 }
 .formButton:last-of-type {
