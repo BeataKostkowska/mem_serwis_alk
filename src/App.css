@@ -1,17 +1,21 @@
+/* general */
 body {
   background-color: #b5b5b5;
   min-width: 1000px;
+  font-family: "Poppins", sans-serif;
 }
 .App {
   text-align: center;
   box-sizing: border-box;
   
 }
-
 main {
-  margin-top: 80px;
-  
+  margin-top: 80px;  
 }
+.page{
+  margin: 100px;
+}
+/* Mem component */
 
 .upButton {  
   background-color: #b5b5b5;
@@ -19,10 +23,11 @@ main {
   border: green solid 2px;
   border-radius: 12px;
   font-weight: 500;
-  font-size: large;
+  font-size: 18px;
   width: 160px;
   padding: 8px;
-  margin-right: 10px;
+  margin: 10px 10px 10px 0px;
+  font-family: "Poppins", sans-serif;
 }
 
 .upButton:hover {
@@ -36,10 +41,11 @@ main {
   border: red solid 2px;
   border-radius: 12px;
   font-weight: 500;
-  font-size: large;
+  font-size: 18px;
   width: 160px;
   padding: 8px;
-  margin-left: 10px;
+  margin: 10px 0 10px 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 .downButton:hover {
@@ -51,14 +57,18 @@ main {
   border: #ffae42 solid 2px;
   border-radius: 8px;
   background-color: #b5b5b5;
+  /* width: 45px;
+  height: 45px; */
 }
 
+/* Home Page image */
 .homeImage {
   height: 70vh;
   align-content: center;
-  margin-top: 5vh;
+  margin-top: 6vh;
 }
 
+/* Error Page elements */
 .errorPage {
   max-height: 100vh;
 }
@@ -88,3 +98,4 @@ main {
   background-color: #ffae42;
   color: #325a6e;
 }
+

@@ -1,10 +1,12 @@
+import morning_people from "../memes_images/morning_people.png";
+
 export let memesDatabase = [
     {
         id: 1,
-        title: 'Mem 1',
+        title: 'Morning People',
         upvotes: 8,
         downvotes: -1,
-        img: 'Mem 1 image path',
+        img: morning_people,
         favourite: 0,
     },
     {

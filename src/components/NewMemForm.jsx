@@ -47,14 +47,20 @@ export function NewMemForm ({memesList, setMemesList}) {
 
     return (
         <form className={styles.formContainer}>
-            <label className={styles.label}>Mem Title: 
-                <input onChange={titleHandler} type="text" value={newMemTitle} name="title"/>
+            <label className={styles.labelForm}>Mem Title: 
+                <input onChange={titleHandler} type="text" value={newMemTitle} name="title" required  className={styles.inputForm}/>
             </label>
-            <label>Provide a link to the image: 
-                <input onChange={linkHandler} type="url" value={newMemLink} name="link"/>
+            <label className={styles.labelForm}>Provide a link to the image: 
+                <input onChange={linkHandler} value={newMemLink} type="url" name="link" required  className={styles.inputForm}/>
             </label>
-            <button onClick={sendForm} type="submit">Create new Mem</button>
-            <button onClick={resetForm}>Reset form</button>            
+            <label className={styles.labelForm}>
+                <input type="checkbox" required/>
+                I confirm that the meme created is in line with the terms and conditions of Mem Serwis.                
+            </label>
+            <div className={styles.buttonsContainer}>
+            <button onClick={sendForm} type="submit" className={styles.formButton}>Create new Mem</button>
+            <button onClick={resetForm} className={styles.formButton}>Reset form</button>
+            </div>            
         </form>
     )
 }

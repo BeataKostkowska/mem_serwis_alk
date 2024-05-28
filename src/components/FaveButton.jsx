@@ -20,11 +20,11 @@ export function FaveButton ({mem, memesList, setMemesList, favourite}) {
     }
 
     return (
-        <div>
+        <>
             <button onClick={() => addToFavourites(mem)} className="faveButton">
                 { mem.favourite === 0 ? <EmptyStar /> : <FilledStar /> }
             </button>
-        </div>
+        </>
 
     )
 }

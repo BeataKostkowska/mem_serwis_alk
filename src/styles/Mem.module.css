@@ -2,9 +2,23 @@
     border: #325a6e solid 2px;
     margin: 10px auto;
     padding: 10px;
-    width: 600px;
+    width: 480px;
 }
 
 .memImage {
-    width: 500px;
-  }
+    max-width: 450px;
+    max-height: 50vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.memTitle {
+    font-size: 24px;
+    margin: 0;
+}
+
+.titleSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
