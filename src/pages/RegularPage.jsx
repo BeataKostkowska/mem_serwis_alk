@@ -1,9 +1,11 @@
 import { Mem } from "../components/Mem";
+import { NavigationBar } from "../components/NavigationBar";
 
 export function RegularPage ({memesList, setMemesList}) {
 
     return (
         <div>
+            <NavigationBar />
             <h2>Regular Memes</h2>
             { memesList
                 .filter(mem => (mem.upvotes + mem.downvotes <= 5))

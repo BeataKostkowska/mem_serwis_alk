@@ -1,7 +1,11 @@
+import { NavigationBar } from "../components/NavigationBar";
+import hello from "../memes_images/oh-hello-there.jpg"
+
 export function HomePage () {
     return (
         <div>
-            <h2>Home</h2>
+            <NavigationBar />
+            <img src={hello} alt={`"Hello there" cat`} className="homeImage" />
         </div>
     );
 }

@@ -4,7 +4,9 @@
     align-items: center;
     position: fixed;
     width: 100vw;
+    min-width: 1000px;
     top: 0;
+    height: 80px;
 }
 
 .title {    
@@ -27,7 +29,6 @@
 
 .navButton {
     display: flex;
-    border: 1px solid black;
     list-style: none;
     border: #ffae42 solid 2px;
     justify-content: center;    

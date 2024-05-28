@@ -7,8 +7,10 @@ body {
   box-sizing: border-box;
   
 }
+
 main {
-  margin-top: 100px;
+  margin-top: 80px;
+  
 }
 
 .upButton {  
@@ -51,3 +53,38 @@ main {
   background-color: #b5b5b5;
 }
 
+.homeImage {
+  height: 70vh;
+  align-content: center;
+  margin-top: 5vh;
+}
+
+.errorPage {
+  max-height: 100vh;
+}
+
+.errorImage {
+  display: block;
+  height: 70vh;
+  margin: auto;
+}
+
+.errorPageButton {
+  margin-top: 10px;
+  padding: 6px;
+  border: #325a6e solid 2px;
+  border-radius: 8px;
+  list-style: none;
+  justify-content: center;
+}
+
+.errorPageButton a {
+  color: #325a6e;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.errorPageButton:hover {
+  background-color: #ffae42;
+  color: #325a6e;
+}
