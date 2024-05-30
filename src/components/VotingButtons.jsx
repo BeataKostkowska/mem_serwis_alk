@@ -14,7 +14,7 @@ export function VotingButtons ({upvotes, downvotes, mem, setMemesList, memesList
                 ));
     }
         
-    console.log(mem);
+    // console.log(mem);
 
     return (
         <div>

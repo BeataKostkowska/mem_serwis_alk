@@ -5,19 +5,27 @@ export function NewMemForm ({memesList, setMemesList}) {
 
     const [newMemTitle, setNewMemTitle] = useState("");
     const [newMemLink, setNewMemLink] = useState("");
+    const [isChecked, setIsChecked] = useState(false);
 
     const titleHandler = (e) => {
-        console.log(newMemTitle);
+        // console.log(newMemTitle);
         setNewMemTitle(e.target.value);
     }
 
     const linkHandler = (e) => {
-        console.log(newMemLink);
+        // console.log(newMemLink);
         setNewMemLink(e.target.value);
     }
 
+    const checkboxHandler = (e) => {
+        // console.log(e);
+        console.log(isChecked);
+        setIsChecked(e.target.checked);
+        
+    }
+
     const sendForm = (e) => {
-        e.preventDefault();
+        //e.preventDefault();
 
         const newMem = {
             id: memesList.length + 1,
@@ -33,6 +41,7 @@ export function NewMemForm ({memesList, setMemesList}) {
             setMemesList([...memesList, newMem]);
             setNewMemTitle("");
             setNewMemLink("");
+            setIsChecked(false);
         }
     };
 
@@ -42,6 +51,7 @@ export function NewMemForm ({memesList, setMemesList}) {
         if(window.confirm("Are you sure you want to reset form?")) {
             setNewMemTitle("");
             setNewMemLink("");
+            setIsChecked(false);
         }
     };
 
@@ -54,7 +64,7 @@ export function NewMemForm ({memesList, setMemesList}) {
                 <input onChange={linkHandler} value={newMemLink} type="url" name="link" required  className={styles.inputForm}/>
             </label>
             <label className={styles.labelForm}>
-                <input type="checkbox" required />
+                <input onChange={checkboxHandler} type="checkbox" required />
                 I confirm that the meme created is in line with the terms and conditions of Mem Serwis.                
             </label>
             <div className={styles.buttonsContainer}>
