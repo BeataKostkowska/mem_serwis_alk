@@ -1,9 +1,9 @@
 # Mem Serwis
 ### Beata Kostkowska
 
-To start the project use commands:
+To start the project use commands:\
 `npm install`\
-`npm start`
+`npm start`\
 
 Project was made using React.
 Styling was made using classical CSS and CSS modules.
