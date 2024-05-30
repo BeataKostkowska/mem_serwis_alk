@@ -1,8 +1,9 @@
-# H1 Mem Serwis
-### H3 Beata Kostkowska
+# Mem Serwis
+### Beata Kostkowska
 
-To start the project use commands:
-`npm install`\n
-`npm start`\n
+To start the project use commands:\
+`npm install`\
+`npm start`
 
-Project was made using React. For styling used classical CSS and CSS modules.
+Project was made using React.
+Styling was made using classical CSS and CSS modules.
