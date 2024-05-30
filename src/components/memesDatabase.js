@@ -1,4 +1,8 @@
 import morning_people from "../memes_images/morning_people.png";
+import work from "../memes_images/work.jpg";
+import netflix from "../memes_images/netflix.jpg";
+import bugs from "../memes_images/bugs.png";
+import programmers from "../memes_images/programmers.png";
 
 export let memesDatabase = [
     {
@@ -11,34 +15,34 @@ export let memesDatabase = [
     },
     {
         id: 2,
-        title: 'Mem 2',
+        title: 'Productive day',
         upvotes: 2,
         downvotes: -2,
-        img: 'Mem 2 image path',
+        img: work,
         favourite: 0,
     },
     {
         id: 3,
-        title: 'Mem 3',
+        title: 'Watching Netflix',
         upvotes: 11,
         downvotes: -3,
-        img: 'Mem 3 image path',
+        img: netflix,
         favourite: 0,
     },
     {
         id: 4,
-        title: 'Mem 4',
+        title: 'Debugging',
         upvotes: 4,
         downvotes: 0,
-        img: 'Mem 4 image path',
+        img: bugs,
         favourite: 0,
     },
     {
         id: 5,
-        title: 'Mem 5',
+        title: 'Programmers',
         upvotes: 3,
         downvotes: -5,
-        img: 'Mem 5 image path',
+        img: programmers,
         favourite: 0,
     },
 ];

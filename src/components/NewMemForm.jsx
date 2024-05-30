@@ -54,7 +54,7 @@ export function NewMemForm ({memesList, setMemesList}) {
                 <input onChange={linkHandler} value={newMemLink} type="url" name="link" required  className={styles.inputForm}/>
             </label>
             <label className={styles.labelForm}>
-                <input type="checkbox" required/>
+                <input type="checkbox" required />
                 I confirm that the meme created is in line with the terms and conditions of Mem Serwis.                
             </label>
             <div className={styles.buttonsContainer}>
