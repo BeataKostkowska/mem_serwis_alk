@@ -78,6 +78,9 @@ main {
   height: 70vh;
   margin: auto;
 }
+.first {
+  cursor: pointer;
+}
 
 .errorPageButton {
   margin-top: 10px;
