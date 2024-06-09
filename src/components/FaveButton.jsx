@@ -5,11 +5,11 @@ export function FaveButton({ mem, memesList, setMemesList, favourite }) {
   const addToFavourites = (mem) => {
     setMemesList(
       memesList.map((m) => {
-        if (m.id === mem.id && favourite === 0) {
-          return { ...m, favourite: 1 };
+        if (m.id === mem.id && !favourite ) {
+          return { ...m, favourite: true };
         }
-        if (m.id === mem.id && favourite !== 0) {
-          return { ...m, favourite: 0 };
+        if (m.id === mem.id && favourite ) {
+          return { ...m, favourite: false };
         } else {
           return m;
         }
@@ -20,7 +20,7 @@ export function FaveButton({ mem, memesList, setMemesList, favourite }) {
   return (
     <>
       <button onClick={() => addToFavourites(mem)} className="faveButton">
-        {mem.favourite === 0 ? <EmptyStar /> : <FilledStar />}
+        {!mem.favourite ? <EmptyStar /> : <FilledStar />}
       </button>
     </>
   );

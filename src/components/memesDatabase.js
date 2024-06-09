@@ -11,7 +11,7 @@ export let memesDatabase = [
     upvotes: 8,
     downvotes: -1,
     img: morning_people,
-    favourite: 0,
+    favourite: false,
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export let memesDatabase = [
     upvotes: 2,
     downvotes: -2,
     img: work,
-    favourite: 0,
+    favourite: false,
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export let memesDatabase = [
     upvotes: 11,
     downvotes: -3,
     img: netflix,
-    favourite: 0,
+    favourite: false,
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ export let memesDatabase = [
     upvotes: 4,
     downvotes: 0,
     img: bugs,
-    favourite: 0,
+    favourite: false,
   },
   {
     id: 5,
@@ -43,6 +43,6 @@ export let memesDatabase = [
     upvotes: 3,
     downvotes: -5,
     img: programmers,
-    favourite: 0,
+    favourite: false,
   },
 ];

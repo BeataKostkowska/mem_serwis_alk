@@ -1,13 +1,13 @@
 import { Mem } from "../components/Mem";
 import { NavigationBar } from "../components/NavigationBar";
 
-export function FavouritePage({ memesList, mem, favourite, setMemesList }) {
+export function FavouritePage({ memesList, favourite, setMemesList }) {
   return (
     <div>
       <NavigationBar />
       <div className="page">
         {memesList
-          .filter((mem) => mem.favourite === 1)
+          .filter((mem) => mem.favourite === true)
           .map((meme) => (
             <Mem
               key={meme.id}

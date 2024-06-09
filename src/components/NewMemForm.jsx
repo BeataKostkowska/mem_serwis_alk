@@ -15,8 +15,6 @@ export function NewMemForm({ memesList, setMemesList }) {
   };
 
   const checkboxHandler = (e) => {
-    console.log(e);
-    console.log(isChecked);
     setIsChecked(e.target.checked);
   };
 
@@ -27,7 +25,7 @@ export function NewMemForm({ memesList, setMemesList }) {
       upvotes: 0,
       downvotes: 0,
       img: newMemLink,
-      favourite: 0,
+      favourite: false,
     };
 
     if (window.confirm("Do you want to create new Mem with this data?")) {

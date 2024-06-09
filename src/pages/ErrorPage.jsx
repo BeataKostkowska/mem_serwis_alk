@@ -11,7 +11,7 @@ export function ErrorPage() {
 
   return (
     <div className="errorPage">
-      {secondError === false ? (
+      {!secondError ? (
         <FirstError changeView={changeView} />
       ) : (
         <SecondErrorImage />
