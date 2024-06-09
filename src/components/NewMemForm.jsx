@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "../styles/NewMemForm.module.css";
-// import { isDisabled } from "@testing-library/user-event/dist/utils";
+import isUrlHttp from "is-url-http";
 
 export function NewMemForm({ memesList, setMemesList }) {
   const [newMemTitle, setNewMemTitle] = useState("");
@@ -21,7 +21,12 @@ export function NewMemForm({ memesList, setMemesList }) {
   };
 
   useEffect(() => {
-    if (newMemTitle.length > 0 && newMemLink.length > 0 && isChecked === true) {
+    if (
+      newMemTitle.length > 0 &&
+      newMemLink.length > 0 &&
+      isUrlHttp(newMemLink) &&
+      isChecked === true
+    ) {
       setIsDisabled(false);
     } else {
       setIsDisabled(true);
