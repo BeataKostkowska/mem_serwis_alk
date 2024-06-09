@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../styles/NewMemForm.module.css";
+// import { isDisabled } from "@testing-library/user-event/dist/utils";
 
 export function NewMemForm({ memesList, setMemesList }) {
   const [newMemTitle, setNewMemTitle] = useState("");
   const [newMemLink, setNewMemLink] = useState("");
   const [isChecked, setIsChecked] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(true);
 
   const titleHandler = (e) => {
     setNewMemTitle(e.target.value);
@@ -17,6 +19,14 @@ export function NewMemForm({ memesList, setMemesList }) {
   const checkboxHandler = (e) => {
     setIsChecked(e.target.checked);
   };
+
+  useEffect(() => {
+    if (newMemTitle.length > 0 && newMemLink.length > 0 && isChecked === true) {
+      setIsDisabled(false);
+    } else {
+      setIsDisabled(true);
+    }
+  }, [newMemTitle, newMemLink, isChecked]);
 
   const sendForm = (e) => {
     const newMem = {
@@ -81,7 +91,12 @@ export function NewMemForm({ memesList, setMemesList }) {
         of Mem Serwis.
       </label>
       <div className={styles.buttonsContainer}>
-        <button onClick={sendForm} type="submit" className={styles.formButton}>
+        <button
+          onClick={sendForm}
+          type="submit"
+          className={styles.formButton}
+          disabled={isDisabled}
+        >
           Create new Mem
         </button>
         <button onClick={resetForm} className={styles.formButton}>
