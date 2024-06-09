@@ -7,17 +7,16 @@ body {
 .App {
   text-align: center;
   box-sizing: border-box;
-  
 }
 main {
-  margin-top: 80px;  
+  margin-top: 80px;
 }
-.page{
+.page {
   margin: 100px;
 }
-/* Mem component */
 
-.upButton {  
+/* Mem component */
+.upButton {
   background-color: #b5b5b5;
   color: green;
   border: green solid 2px;
@@ -53,12 +52,10 @@ main {
   color: rgb(246, 241, 241);
 }
 
-.faveButton{
+.faveButton {
   border: #ffae42 solid 2px;
   border-radius: 8px;
   background-color: #b5b5b5;
-  /* width: 45px;
-  height: 45px; */
 }
 
 /* Home Page image */
@@ -101,4 +98,3 @@ main {
   background-color: #ffae42;
   color: #325a6e;
 }
-

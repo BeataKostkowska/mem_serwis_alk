@@ -1,53 +1,53 @@
 .navbar {
-    background-color: #325a6e;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    width: 100vw;
-    min-width: 1000px;
-    top: 0;
-    height: 80px;
+  background-color: #325a6e;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  min-width: 1000px;
+  top: 0;
+  height: 80px;
 }
 
-.title {    
-    padding: 8px 24px;
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    color: #ffae42;
-    font-size: 48px;
-    font-weight: 500;
-    font-style: normal;
+.title {
+  padding: 8px 24px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #ffae42;
+  font-size: 48px;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.buttonsList{
-    display: inline-flex;
-    width: 60vw;
-    padding: 8px 24px;
-    justify-content: space-around;
-    margin-left: auto;
+.buttonsList {
+  display: inline-flex;
+  width: 60vw;
+  padding: 8px 24px;
+  justify-content: space-around;
+  margin-left: auto;
 }
 
 .navButton {
-    display: flex;
-    list-style: none;
-    border: #ffae42 solid 2px;
-    border-radius: 6px;
-    justify-content: center;    
+  display: flex;
+  list-style: none;
+  border: #ffae42 solid 2px;
+  border-radius: 6px;
+  justify-content: center;
 }
 
 .navButton a {
-    color: #ffae42;
-    text-decoration: none;
-    padding: 8px;
-    width: 100px;
+  color: #ffae42;
+  text-decoration: none;
+  padding: 8px;
+  width: 100px;
 }
 
 .navButton a:hover {
-    background-color: #ffae42;
-    color: #325a6e;
+  background-color: #ffae42;
+  color: #325a6e;
 }
 
-.navButton .active{
-    background-color: #ffae42;
-    color: #325a6e;
+.navButton .active {
+  background-color: #ffae42;
+  color: #325a6e;
 }
