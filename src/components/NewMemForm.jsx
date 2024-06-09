@@ -7,6 +7,7 @@ export function NewMemForm({ memesList, setMemesList }) {
   const [newMemLink, setNewMemLink] = useState("");
   const [isChecked, setIsChecked] = useState(false);
   const [isDisabled, setIsDisabled] = useState(true);
+  const [hoverText, setHoverText] = useState("");
 
   const titleHandler = (e) => {
     setNewMemTitle(e.target.value);
@@ -21,15 +22,16 @@ export function NewMemForm({ memesList, setMemesList }) {
   };
 
   useEffect(() => {
-    if (
-      newMemTitle.length > 0 &&
-      newMemLink.length > 0 &&
-      isUrlHttp(newMemLink) &&
-      isChecked === true
-    ) {
-      setIsDisabled(false);
+    if (newMemTitle.length > 0 && newMemLink.length > 0 && isChecked === true) {
+      if (isUrlHttp(newMemLink)) {
+        setIsDisabled(false);
+      } else {
+        setIsDisabled(true);
+        setHoverText("Provided link is not an URL!");
+      }
     } else {
       setIsDisabled(true);
+      setHoverText("Fill the form!");
     }
   }, [newMemTitle, newMemLink, isChecked]);
 
@@ -101,6 +103,7 @@ export function NewMemForm({ memesList, setMemesList }) {
           type="submit"
           className={styles.formButton}
           disabled={isDisabled}
+          title={hoverText}
         >
           Create new Mem
         </button>
